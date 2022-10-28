@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#root {
+  background-image: linear-gradient(
+    to top,
+    #4fb576 0%,
+    #44c489 30%,
+    #28a9ae 46%,
+    #28a2b7 59%,
+    #4c7788 71%,
+    #6c4f63 86%,
+    #432c39 100%
+  );
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.calculator--container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 520px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
+  );
+  font-family: "Orbitron", sans-serif;
+}
+
+.screen--container {
+  flex: 0.5;
+  flex: 0.5 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-bottom,
+.screen-top {
+  text-align: right;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.screen-top {
+  flex: 1;
+  font-size: 40px;
+  width: 90%;
+  align-self: flex-end;
+}
+
+.screen-bottom {
+  flex: 2;
+  font-size: 150px;
+  width: 80%;
+  align-self: flex-end;
+}
+
+.keypad {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+  flex: 1;
+  display: flex;
+}
+
+.btn {
+  flex: 1;
+  border-radius: 50%;
+  margin: 5px;
+  border: none;
+
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  color: white;
+  font-size: 45px;
+  outline: none;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+}
+
+.btn--zero {
+  flex: 2;
+  border-radius: 95px/80px;
+  align-items: end;
+  display: flex;
+  padding-left: 50px;
+}
+
+.btn--orange {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  color: #330867;
+}
+
+.btn--grey {
+  background-image: linear-gradient(
+    to top,
+    #fdcbf1 0%,
+    #fdcbf1 1%,
+    #e6dee9 100%
+  );
+  color: black;
+}
+
+@media all and (max-width: 530px) {
+  .btn {
+    font-size: 32px;
+  }
+
+  .calculator--container {
+    width: 420px;
+  }
+
+  .btn--zero {
+    padding-left: 40px;
+  }
+
+  .keypad {
+    flex: 0.6 0.5;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .btn {
+    font-size: 25px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .calculator--container {
+    width: 315px;
+  }
+}
